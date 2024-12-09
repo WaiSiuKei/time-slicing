@@ -1,0 +1,31 @@
+{
+  "name": "time-slice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "module",
+  "scripts": {
+    "debug": "node --inspect-brk src/transform/index.mjs",
+    "transform": "node src/transform/index.mjs > ./docs/es5.js",
+    "gen": "regenerator ./example/yield.js > ./example/es5.js",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "@vitejs/plugin-react": "^4.1.0",
+    "eslint": "^8.50.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "recast": "^0.23.4",
+    "regenerator": "^0.14.10",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "@types/node": "^20.8.4"
+  }
+}

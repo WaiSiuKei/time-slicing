@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "strict": true,
+    "outDir": "dist",
+    "jsx": "react",
+    "allowJs": true,
+    "checkJs": false,
+    "allowSyntheticDefaultImports": true,
+    //    "jsxFactory": "h",
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "node/**/*"
+  ]
+}
